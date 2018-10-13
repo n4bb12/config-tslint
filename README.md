@@ -19,3 +19,20 @@
 ## About
 
 Shareable TSLint configuration for my personal projects.
+
+## Install
+
+```
+yarn add --dev @n4bb12/config-tslint
+```
+
+
+## Usage
+
+Add the following to your [TSLint config](https://palantir.github.io/tslint/usage/configuration):
+
+```json
+{
+  "extends": "@n4bb12/config-tslint"
+}
+```
