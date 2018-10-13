@@ -1,0 +1,50 @@
+{
+  "$schema": "http://json.schemastore.org/tslint",
+  "extends": ["tslint:recommended"],
+  "rules": {
+    "arrow-parens": {
+      "options": "ban-single-arg-parens",
+      "severity": "warning"
+    },
+    "eofline": {
+      "severity": "warning"
+    },
+    "indent": {
+      "options": ["spaces", 2],
+      "severity": "warning"
+    },
+    "interface-name": {
+      "options": "never-prefix",
+      "severity": "warning"
+    },
+    "linebreak-style": [true, "LF"],
+    "max-line-length": {
+      "options": [80],
+      "severity": "warning"
+    },
+    "no-console": false,
+    "no-trailing-whitespace": {
+      "severity": "warning"
+    },
+    "object-literal-key-quotes": {
+      "options": "consistent-as-needed",
+      "severity": "warning"
+    },
+    "object-literal-sort-keys": false,
+    "quotemark": {
+      "options": "double",
+      "severity": "warning"
+    },
+    "semicolon": {
+      "options": "never",
+      "severity": "warning"
+    },
+    "trailing-comma": {
+      "options": {
+        "multiline": "always",
+        "singleline": "never"
+      },
+      "severity": "warning"
+    }
+  }
+}
