@@ -1,6 +1,6 @@
 {
   "name": "@n4bb12/config-tslint",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "Shareable TSLint configuration for my projects",
   "keywords": [],
   "homepage": "https://github.com/n4bb12/config-tslint/blob/master/README.md",
@@ -13,7 +13,8 @@
   ],
   "main": "index.js",
   "scripts": {
-    "build": "node build"
+    "build": "node build",
+    "prepublishOnly": "yarn build"
   },
   "$schema": "http://json.schemastore.org/package"
 }
