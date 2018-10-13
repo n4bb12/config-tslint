@@ -1,0 +1,19 @@
+{
+  "name": "@n4bb12/config-tslint",
+  "version": "1.0.0",
+  "description": "Shareable TSLint configuration for my projects",
+  "keywords": [],
+  "homepage": "https://github.com/n4bb12/config-tslint/blob/master/README.md",
+  "bugs": "https://github.com/n4bb12/config-tslint/issues",
+  "repository": "github:n4bb12/config-tslint",
+  "license": "ISC",
+  "author": "Abraham Schilling",
+  "files": [
+    "index.js"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "build": "node build"
+  },
+  "$schema": "http://json.schemastore.org/package"
+}
