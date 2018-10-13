@@ -8,7 +8,11 @@
     "interface-name": [true, "never-prefix"],
     "linebreak-style": [true, "LF"],
     "max-line-length": [true, 80],
+    "no-console": {
+      "severity": "warning"
+    },
     "no-trailing-whitespace": true,
+    "object-literal-key-quotes": [true, "consistent-as-needed"],
     "object-literal-sort-keys": false,
     "quotemark": [true, "double"],
     "semicolon": [true, "never"],
