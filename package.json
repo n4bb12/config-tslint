@@ -2,7 +2,14 @@
   "name": "@n4bb12/config-tslint",
   "version": "1.2.0",
   "description": "Shareable TSLint configuration for my projects",
-  "keywords": [],
+  "keywords": [
+    "config",
+    "lint",
+    "preset",
+    "shareable",
+    "tslint",
+    "typescript"
+  ],
   "homepage": "https://github.com/n4bb12/config-tslint/blob/master/README.md",
   "bugs": "https://github.com/n4bb12/config-tslint/issues",
   "repository": "github:n4bb12/config-tslint",
