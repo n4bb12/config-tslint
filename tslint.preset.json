@@ -17,7 +17,10 @@
       "options": "never-prefix",
       "severity": "warning"
     },
-    "linebreak-style": [true, "LF"],
+    "linebreak-style": {
+      "options": ["LF"],
+      "severity": "error"
+    },
     "max-line-length": {
       "options": [80],
       "severity": "warning"
@@ -26,7 +29,9 @@
       "options": "no-public",
       "severity": "warning"
     },
-    "no-console": false,
+    "no-console": {
+      "severity": "off"
+    },
     "no-trailing-whitespace": {
       "severity": "warning"
     },
@@ -34,7 +39,9 @@
       "options": "consistent-as-needed",
       "severity": "warning"
     },
-    "object-literal-sort-keys": false,
+    "object-literal-sort-keys": {
+      "severity": "off"
+    },
     "quotemark": {
       "options": "double",
       "severity": "warning"
