@@ -1,6 +1,8 @@
 {
   "$schema": "http://json.schemastore.org/tslint",
-  "extends": ["tslint:recommended"],
+  "extends": [
+    "tslint:recommended"
+  ],
   "rules": {
     "arrow-parens": {
       "options": "ban-single-arg-parens",
@@ -10,7 +12,10 @@
       "severity": "warning"
     },
     "indent": {
-      "options": ["spaces", 2],
+      "options": [
+        "spaces",
+        2
+      ],
       "severity": "warning"
     },
     "interface-name": {
@@ -18,11 +23,15 @@
       "severity": "warning"
     },
     "linebreak-style": {
-      "options": ["LF"],
+      "options": [
+        "LF"
+      ],
       "severity": "error"
     },
     "max-line-length": {
-      "options": [80],
+      "options": [
+        80
+      ],
       "severity": "warning"
     },
     "member-access": {
@@ -55,6 +64,9 @@
         "multiline": "always",
         "singleline": "never"
       },
+      "severity": "warning"
+    },
+    "variable-name": {
       "severity": "warning"
     }
   }

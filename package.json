@@ -3,6 +3,7 @@
   "version": "1.4.0",
   "description": "Shareable TSLint configuration for my projects",
   "keywords": [
+    "codestyle",
     "config",
     "lint",
     "preset",

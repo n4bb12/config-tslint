@@ -4,7 +4,7 @@
 </h1>
 
 <p align="center">
-  Personal TSLint configuration.
+  TSLint configuration focusing on productivity and readability.
 </p>
 
 <p align="center">
@@ -13,16 +13,11 @@
   </a>
 </p>
 
-## About
-
-Shareable TSLint configuration for my personal projects.
-
 ## Install
 
 ```
 yarn add --dev @n4bb12/config-tslint
 ```
-
 
 ## Usage
 
@@ -37,47 +32,49 @@ Add the following to your [TSLint config](https://palantir.github.io/tslint/usag
 
 ## Thoughts
 
-Maximizing productivity is my number one principle for making choices on linting rules.
+If the mere goal is consistency, any randomly chosen ruleset is equally good.
 
-While any random choice of formatting and linting rules will make work easier for teams, many choices have an impact on productivity.
+From a productivity and readability standpoint, however, different rule configurations can have varyling levels of potential positive and negative impact.
 
-Readability and editability are my main productivity priorities.
+### `trailing-comma`
+
+```json
+{ "multiline": "always", "singleline": "never" }
+```
+
+- Allows cloning the last line.
+- Allows exchanging the last line.
+- Allows deleting the last line.
+- Is auto-fixable, while a missing semicolon, after performing one of the above actions, is not.
+
+### `semicolon`
+
+```json
+"never"
+```
+
+- Semicolons are noise and don't add any value.
+- Non-semicolon snippets work both as statements and as parameters:
+
+```ts
+console.log()
+events.subscribe(e => console.log(e)/* no disturbing semicolon here */)
+```
+
+### `quotemark`
+
+```json
+"double"
+```
+
+- Double quotes are valid and commonly used in way more languages than single quotes.
+- Double quotes are easier to type on German keyboards.
 
 <!-- ### `arrow-parens`
 
 ```json
 "ban-single-arg-parens"
 ``` -->
-
-### `eofline`
-
-```json
-true
-```
-
-- An extra empty line speeds up adding new code at the end.
-- When hitting `Ctrl + End`, I want the cursor to be on line start.
-
-### `indent`
-
-```json
-["spaces", 2]
-```
-
-- Spaces look better on the Web.
-- Two spaces seem to be the most common choice.
-- Editor support is good enough to compete with tabs.
-
-### `interface-name`
-
-```json
-"never-prefix"
-```
-
-- Modern tools make it easy to determine the accurate type quickly, when needed. This makes type prefixes are a thing of the past.
-- Interfaces in TypeScript have a different semantic than in other languages, where the `I` prefix is commonly used on interfaces.
-- `class`, `interface` and `type` are often intersected or exchanged, depending on what needs to be achieved, so type names would need to be changed quite often, when they are prefixed with `C`, `I` or `T`.
-- Prefixes don't play well with acronyms.
 
 ### `linebreak-style`
 
@@ -86,7 +83,7 @@ true
 ```
 
 - `LF` works well on all platforms.
-- `CRLF` in bash scripts have fallen on my foot too many times.
+- `CRLF` in bash scripts will fail on non-Windows systems.
 
 ### `max-line-length`
 
@@ -94,7 +91,9 @@ true
 [80]
 ```
 
-- Eyes can consume shorter lines faster.
+- Easier to work with two columns / files side by side
+- Leaves enough space for tool windows like file tree, outline
+- Horizontal scrolling is tedious when you don't have a horizontal scroll wheel
 
 <!-- ### `member-access`
 
@@ -112,38 +111,34 @@ true
 ```
 
 - Less typing is needed when keys are not quoted.
-- When quoting is needed, consistency improves readability.
+- When quoting is however needed, consistency improves readability.
 
-### `quotemark`
-
-```json
-"double"
-```
-
-- Double quotes are valid and commonly used in way more languages than single quotes.
-- Double quotes are easier to type on German keyboards.
-
-### `semicolon`
+### `eofline`
 
 ```json
-"never"
+true
 ```
 
-- Semicolons don't are noise and don't add any value.
-- Non-semicolon snippets work both as statements and as parameters:
+- An extra empty line speeds up adding new code at the end.
+- When hitting `Ctrl + End`, the page in most cases only scrolls vertically.
 
-```ts
-console.log()
-events.subscribe(e => console.log(e)/* no disturbing semicolon here */)
-```
-
-### `trailing-comma`
+### `indent`
 
 ```json
-{ "multiline": "always", "singleline": "never" }
+["spaces", 2]
 ```
 
-- Allows cloning the last line.
-- Allows exchanging the last line.
-- Allows deleting the last line.
-- Is auto-fixable, while a missing semicolon, when attempting one of the above actions, is not.
+- Spaces look better on the Web.
+- Editor support is good enough to compete with tabs.
+- Two spaces seem to be the most common choice.
+
+### `interface-name`
+
+```json
+"never-prefix"
+```
+
+- Modern tools make it easy to determine the accurate type quickly, when needed. This makes type prefixes are a thing of the past.
+- Interfaces in TypeScript have a different semantic than in other languages, where the `I` prefix is commonly used on interfaces.
+- `class`, `interface` and `type` are often intersected or exchanged, depending on what needs to be achieved, so type names would need to be changed quite often, when they are prefixed with `C`, `I` or `T`.
+- Prefixes don't play well with acronyms.
