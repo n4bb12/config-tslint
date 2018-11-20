@@ -8,6 +8,9 @@
 </p>
 
 <p align="center">
+  <a href="https://www.npmjs.com/package/@n4bb12/config-tslint">
+    <img alt="Version" src="https://flat.badgen.net/npm/v/@n4bb12/config-tslint?icon=npm">
+  </a>
   <a href="https://raw.githubusercontent.com/n4bb12/config-tslint/master/LICENSE">
     <img alt="License" src="https://flat.badgen.net/github/license/n4bb12/config-tslint?icon=github">
   </a>
