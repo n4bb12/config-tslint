@@ -14,6 +14,9 @@
   <a href="https://raw.githubusercontent.com/n4bb12/config-tslint/master/LICENSE">
     <img alt="License" src="https://flat.badgen.net/github/license/n4bb12/config-tslint?icon=github">
   </a>
+  <a href="https://github.com/n4bb12/config-tslint/issues/new/choose">
+    <img alt="Issues" src="https://flat.badgen.net/badge/github/create issue/pink?icon=github">
+  </a>
 </p>
 
 ## Install
@@ -31,7 +34,6 @@ Add the following to your [TSLint config](https://palantir.github.io/tslint/usag
   "extends": "@n4bb12/config-tslint"
 }
 ```
-
 
 ## Thoughts
 
